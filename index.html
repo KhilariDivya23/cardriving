@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Car Driving</title>
+</head>
+<body>
+    <div class="themes">
+        <h2>Choose Theme</h2>
+        <button onclick="change('img1.jpg')"><img src="./img1.jpg" alt="theme 1"></button>
+        <button onclick="change('back.jpg')"><img src="./back.jpg" alt="theme 2"></button>
+        <button onclick="change('img3.png')"><img src="./img3.png" alt="theme 3"></button>
+        <button onclick="change('img4.jpg')"><img src="./img4.jpg" alt="theme 4"></button>
+        <button onclick="change('img5.jpg')"><img src="./img5.jpg" alt="theme 5"></button>
+        <button onclick="change('img6.jpg')"><img src="./img6.jpg" alt="theme 5"></button>
+    </div>
+    <div class="main_back" id="main_back">
+        <div class="back" id="back">
+            <div class="buttons">
+                <button onclick="motion_start()">START</button>
+                <button onclick="motion_stop()">STOP</button>
+            </div>
+        </div>
+        <div class="road" id="road">
+            <div class="car">
+                <img src="./car.png" alt="car" id="car" style="position:absolute;">
+            </div>
+        </div>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>

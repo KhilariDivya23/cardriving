@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.themes{
+    float: left;
+    width: 12%;
+    height: 100vh;
+}
+
+.themes img{
+    width: 90%;
+    height: 50%;
+    background-size: 100% 100%;
+    margin: 0.2em 0.3em 0px 0.3em;
+}
+
+.themes::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main_back{
+    float: left;
+    width: 88%;
+    
+}
+
+.main_back::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main_back .back{
+    background-image: url('./back.jpg');
+    height: 77vh;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.main_back .road{
+    background-image: url('./road.jpg');
+    height: 23vh;
+    position: relative;
+    background-repeat: repeat-x;
+}
+
+.main_back .road .car img{
+    position: absolute;
+    width: 10em;
+    top: 0px;
+    left: 0px;
+    /* animation: moveLeft 6s linear infinite; */
+}
+
+.main_back .back .buttons{
+    text-align: center;
+    margin: 0px auto;
+}
+
+.buttons button{
+    background-color: cornsilk;
+    color: black;
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
+
+.themes button:hover{
+    background-color: black;
+}
+
+.themes button{
+    background-color: white;
+    border: hidden;
+}
+
